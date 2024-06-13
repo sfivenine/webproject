@@ -25,17 +25,17 @@
             flex-direction: row;
             align-items: center;
             position: absolute;
-            top: 10vh; /* 调整此值以更改时钟的位置 */
+            top: 9.3vh; /* 调整此值以更改时钟的位置 */
             left: 50vw;
             transform: translate(-50%, 0);
         }
 
         .clock, .date {
-            color: red;
+            color:rgb(226, 19, 19);
             font-weight: bold;
             margin: 0 3px;
             font-size: 100px; /* 使用视口宽度单位，以便在不同屏幕上比例一致 */
-            font-family: 'SimHei', Courier, monospace; /* 设置字体 */
+            font-family: 'Fraktur', Courier, monospace; /* 设置字体 */
         }
 
         .blink-text {
@@ -44,7 +44,7 @@
             animation: blink 1s infinite; /* 添加闪烁动画 */
             position: absolute;
             bottom: 61vh; /* 距离底部5%视口高度 */
-            right: 1.5vw; /* 距离右侧5%视口宽度 */
+            right: 1.2vw; /* 距离右侧5%视口宽度 */
         }
 
         @keyframes blink {
