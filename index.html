@@ -25,17 +25,17 @@
             flex-direction: row;
             align-items: center;
             position: absolute;
-            top: 8.9vh; /* 调整此值以更改时钟的位置 */
+            top: 9.5vh; /* 调整此值以更改时钟的位置 */
             left: 50vw;
             transform: translate(-50%, 0);
         }
 
         .clock, .date {
-            color:rgb(226, 19, 19);
+            color:rgb(180, 19, 19);
             font-weight: bold;
             margin: 0 3px;
             font-size: 100px; /* 使用视口宽度单位，以便在不同屏幕上比例一致 */
-            font-family: '黑体', Courier, monospace; /* 设置字体 */
+            font-family: 'Calibri (正文)', Courier, monospace; /* 设置字体 */
         }
 
         .blink-text {
@@ -86,7 +86,7 @@
         function updateTime() {
             const now = new Date();
             const year = now.getFullYear();
-            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString();
             const day = now.getDate().toString().padStart(2, '0');
             const hours = now.getHours().toString().padStart(2, '0');
             const minutes = now.getMinutes().toString().padStart(2, '0');
